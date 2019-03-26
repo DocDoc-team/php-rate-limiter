@@ -1,0 +1,31 @@
+{
+    "name": "docdoc/php-rate-limiter",
+    "description": "Rate limiter + psr15 middleware",
+    "homepage": "https://github.com/DocDoc-team/php-rate-limiter",
+    "type": "library",
+    "config": {
+        "optimize-autoloader": true
+    },
+    "authors": [
+        {
+            "name": "Alexpts",
+            "email": "alexpts3@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "php": "~7.1",
+        "ext-redis": "^4.1",
+        "psr/http-server-middleware": "^1.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^8.0",
+        "zendframework/zend-diactoros": "^2.1",
+        "relay/relay": "2.x@dev"
+    },
+    "autoload": {
+        "psr-4": {
+            "DocDoc\\RateLimiter\\": "src"
+        }
+    }
+}

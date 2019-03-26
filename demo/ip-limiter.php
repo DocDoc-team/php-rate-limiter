@@ -1,24 +1,8 @@
-# Rate Limiter
-
-Fork from https://github.com/alexpts/php-rate-limiter
-
-Rate limiter + PSR-15 middleware
-
-
-#### Install
-
-`composer require docdoc/php-rate-limiter`
-
-
-#### Example
-
-```php
 <?php
 
-
-use DocDoc\RateLimiter\Adapter\MemoryAdapter;
-use DocDoc\RateLimiter\Limiter;
-use DocDoc\RateLimiter\RateLimitMiddleware;
+use PTS\RateLimiter\Adapter\MemoryAdapter;
+use PTS\RateLimiter\Limiter;
+use PTS\RateLimiter\RateLimitMiddleware;
 use Relay\Relay;
 use Zend\Diactoros\Response\JsonResponse;
 use Zend\Diactoros\ServerRequestFactory;
@@ -34,12 +18,10 @@ $limiterMiddleware->setKeyAttr('ip');
 
 $psr15Runner = new Relay([
     $limiterMiddleware
-]); // relay or other psr-15 runner
+]);
 
 $psr7Request = ServerRequestFactory::fromGlobals();
 $response = $psr15Runner->handle($psr7Request);
 
 // flush response or other
 // ...
-
-```
