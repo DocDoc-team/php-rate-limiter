@@ -3,6 +3,7 @@
     "description": "Rate limiter + psr15 middleware",
     "homepage": "https://github.com/DocDoc-team/php-rate-limiter",
     "type": "library",
+    "license": "MIT",
     "config": {
         "optimize-autoloader": true
     },
