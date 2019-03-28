@@ -2,6 +2,10 @@
 
 Fork from https://github.com/alexpts/php-rate-limiter
 
+
+[![Build Status](https://travis-ci.org/DocDoc-team/php-rate-limiter.svg?branch=master)](https://travis-ci.org/DocDoc-team/php-rate-limiter)
+
+
 Rate limiter + PSR-15 middleware
 
 
