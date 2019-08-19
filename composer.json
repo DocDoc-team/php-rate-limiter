@@ -16,7 +16,7 @@
     "minimum-stability": "stable",
     "require": {
         "php": "~7.1",
-        "ext-redis": "^4.1",
+        "ext-redis": "^4|^5",
         "psr/http-server-middleware": "^1.0"
     },
     "require-dev": {
